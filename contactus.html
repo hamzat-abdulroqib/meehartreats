@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin:auto;
+        }
+
+        .contact{
+            font-size: x-large;
+            text-align: center;
+
+        }
+
+        .container {
+            width: 50%;
+            margin: auto;
+            margin-top: 100px;
+        }
+
+        .formgroup {
+            margin-bottom: 20px;
+        }
+
+        .formgroup label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .formgroup input[type="text"],
+        .formgroup input[type="email"],
+        .formgroup textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .formgroup textarea {
+            height: 150px;
+        }
+
+        .formgroup input[type="submit"] {
+            background-color: #000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .formgroup input[type="submit"]:hover {
+            background-color: #484848;
+        }
+
+        .label{
+            font-size: large;
+        }
+    </style>
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logoContent">
+            <a href="#" class="logo"><img src="logo.png" alt=""></a>
+            <h1 class="logoName">meehar's cake</h1>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="#product">product</a>
+            <a href="contactus.html">contact</a>
+        </nav>
+
+        <div class="icon">
+            <i class="fas fa-search" id="search"></i>
+            <i class="fas fa-bars" id="menu-bar"></i>
+        </div>
+
+        <div class="search">
+            <input type="search" placeholder="search...">
+        </div>
+    </header>
+    <div class="container">
+        <h2 class="contact">Contact Us</h2>
+        <form action="process_form.php" method="post">
+            <div class="formgroup">
+                <label for="name" class="label">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="formgroup">
+                <label for="email" class="label">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="formgroup">
+                <label for="message"class="label">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="formgroup">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
